@@ -14,7 +14,7 @@ public class main {
         int width = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
         int height = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
 
-        while (infinite || amount >= 1) {
+        while (infinite || (!infinite && amount >= 1)) {
 
             robot.mouseMove(random.nextInt(width), random.nextInt(height));
             Thread.sleep(duration);
